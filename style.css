@@ -82,6 +82,8 @@ a:not(.btn--remix):visited {
 .divider {
   padding: 0 1rem;
 }
+
+
 /******************************************************************************
 END Glitch hello-app default styles
 ******************************************************************************/
@@ -107,8 +109,7 @@ body {
   justify-content: center;
 }
 
-/* Very light scaling for our illustration */
-.title {
+h1 {
   color: #66ccff;
   font-family: verdana, arial, sans-serif; 
   font-style: normal;
@@ -117,17 +118,8 @@ body {
   margin: 0;
 }
 
-/* Very light scaling for our illustration */
-.illustration {
-  max-width: 100%;
-  max-height: var(--image-max-width);
-  margin-top: var(--image-margin);
-}
 
-/* Instructions */
-.instructions {
-  margin: 1rem auto 0;
-}
+
 
 /* Button - Add it from the README instructions */
 button,
@@ -141,18 +133,6 @@ input {
   padding: 0.5rem 1rem;
   transition: 500ms;
 }
-
-/* Sbheading */
-h1 {
-  font-family: verdana, arial, sans-serif; 
-  color: #2800FF;
-}
-
-/* Interactive image */
-.illustration:active {
-  transform: translateY(5px);
-}
-
 /* Button dip
 - Toggling this class on and off will move it down and up again
 - The button transition property above determines the speed of the translate (500ms)
