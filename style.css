@@ -40,9 +40,6 @@ h1 {
 button {
   font-family: inherit;
   font-size: 100%;
-  border: 1px solid #000000;
-  box-sizing: border-box;
-  transition: 500ms;
   padding: 10px;
   border-radius: 10px;
 }
@@ -80,11 +77,4 @@ button {
 }
 #button4:active {
     background:yellow;
-}
-/* Button dip
-- Toggling this class on and off will move it down and up again
-- The button transition property above determines the speed of the translate (500ms)
-*/
-.dipped {
-  transform: translateY(5px);
 }
