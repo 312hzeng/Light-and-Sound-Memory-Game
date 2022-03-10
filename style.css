@@ -6,12 +6,12 @@ light and sound-app default styles
 body {
   font-family: verdana, arial, sans-serif; 
   margin: 2em;
-  background-color: slategrey;
-  color: white;
+  background-image: url('https://cdn.pixabay.com/photo/2017/10/11/23/35/musical-background-2842924_1280.jpg');  color: white;
+  text-align: center;
 }
 
 h1 {
-  color: #66ccff;
+  color: white;
   font-family: verdana, arial, sans-serif; 
 }
 
@@ -47,6 +47,13 @@ button {
 #button4 {
     background: lightyellow;
 }
+#button5 {
+    background: orange;
+}
+#button6 {
+    background: white;
+}
+
 
 #button1:active , #button1.lit{
     background:green;
@@ -60,3 +67,10 @@ button {
 #button4:active, #button4.lit {
     background:yellow;
 }
+#button5:active, #button5.lit {
+    background:#D53A18;
+}
+#button6:active, #button6.lit {
+    background:yellow;
+}
+
