@@ -9,7 +9,7 @@ const cluePauseTime = 333; //how long to pause in between clues
 const nextClueWaitTime = 1000; //how long to wait before starting playback of the clue sequence
 
 //global var
-var pattern = [2, 2, 4, 3, 2, 1, 2, 4];
+var pattern = [2, 2, 6, 5, 4, 6, 2, 4];
 var progress = 0; 
 var gamePlaying = false;
 var guessCounter = 0;
@@ -38,8 +38,11 @@ const freqMap = {
   1: 261.6,
   2: 290.6,
   3: 329.6,
-  4: 350.2
+  4: 350.2,
+  5: 390.2,
+  6: 430
 }
+
 function playTone(btn,len){ 
   o.frequency.value = freqMap[btn]
   g.gain.setTargetAtTime(volume,context.currentTime + 0.05,0.025)
@@ -49,6 +52,7 @@ function playTone(btn,len){
     stopTone()
   },len)
 }
+
 function startTone(btn){
   if(!tonePlaying){
     context.resume()
@@ -58,6 +62,7 @@ function startTone(btn){
     tonePlaying = true
   }
 }
+
 function stopTone(){
   g.gain.setTargetAtTime(0,context.currentTime + 0.05,0.025)
   tonePlaying = false
@@ -85,7 +90,7 @@ function playSingleClue(btn){
 function playClueSequence(){
   guessCounter = 0;
   let delay = nextClueWaitTime; //set delay to initial wait time
-  for(let i=0;i<=progress;i++){ // for each clue that is revealed so far
+  for(let i = 0;i <= progress;i++){ // for each clue that is revealed so far
     console.log("play single clue: " + pattern[i] + " in " + delay + "ms")
     setTimeout(playSingleClue,delay,pattern[i]) // set a timeout to play that clue
     delay += clueHoldTime 
@@ -93,11 +98,10 @@ function playClueSequence(){
   }
 }
 
-function lightButton(btn){
-  document.getElementById("button"+btn).classList.add("lit")
+function lightButton(btn){ document.getElementById("button"+btn).classList.add("lit")
 }
-function clearButton(btn){
-  document.getElementById("button"+btn).classList.remove("lit")
+
+function clearButton(btn){ document.getElementById("button"+btn).classList.remove("lit")
 }
 
 //user response
@@ -105,10 +109,12 @@ function loseGame(){
   stopGame();
   alert("Game Over. You lost.");
 }
+
 function winGame(){
   stopGame();
   alert("Game Over. You won!");
 }
+
 function guess(btn){
   console.log("user guessed: " + btn);
   
