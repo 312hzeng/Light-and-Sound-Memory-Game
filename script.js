@@ -105,7 +105,7 @@ function loseGame(){
   stopGame();
   alert("Game Over. You lost.");
 }
-function Gamwine(){
+function winGame(){
   stopGame();
   alert("Game Over. You won!");
 }
@@ -115,5 +115,24 @@ function guess(btn){
     return;
   }
   
-  // add game logic here
-}
+  //wrong guess: end game and lose
+  else if(pattern[guessCounter != btn]){
+    loseGame();
+  }
+  
+  //correct guess
+  else if(pattern[guessCounter] == btn){
+    if(guessCounter == progress){
+      //end game and win
+      if(progress >= pattern.length - 1){winGame();}
+      //continue
+      else{winGame();}  
+    }
+    
+    else{
+      guessCounter += 1;
+    }
+  }
+  
+  
+}    
