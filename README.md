@@ -37,8 +37,8 @@ The following **additional** features are implemented:
 - [ ] List anything else that you can get done to improve the app!
 
 ## Video Walkthrough (GIF)
-https://github.com/312hzeng/Light-and-Sound-Memory-Game/blob/master/loseGame.gif
-https://github.com/312hzeng/Light-and-Sound-Memory-Game/blob/master/winGame.gif
+* https://github.com/312hzeng/Light-and-Sound-Memory-Game/blob/master/loseGame.gif
+* https://github.com/312hzeng/Light-and-Sound-Memory-Game/blob/master/winGame.gif
 
 ## Reflection Questions
 1. If you used any outside resources to help complete your submission (websites, books, people, etc) list them here. 
