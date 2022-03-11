@@ -121,7 +121,7 @@ function guess(btn){
   if(!gamePlaying){return;}
   
   //wrong guess: reach the end of the game and lose
-  else if(pattern[guessCounter != btn]){loseGame();}
+  else if(pattern[guessCounter] != btn){loseGame();}
   
   //correct guess
   else if(pattern[guessCounter] == btn){
