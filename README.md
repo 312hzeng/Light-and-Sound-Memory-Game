@@ -34,7 +34,7 @@ The following **optional** features are implemented:
 
 The following **additional** features are implemented:
 
-- [ ] Start Button has a sound when it is clicked
+- [x] Start Button has a sound when it is clicked
 
 ## Video Walkthrough (GIF)
 ![loseGame.gif](https://github.com/312hzeng/Light-and-Sound-Memory-Game/blob/master/loseGame.gif)
