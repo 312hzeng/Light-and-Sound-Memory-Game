@@ -33,6 +33,7 @@ function startGame(){
     }
     document.getElementById("startBtn").classList.add("hidden");
     document.getElementById("stopBtn").classList.remove("hidden");
+  
     playClueSequence();
 }
 function stopGame(){
@@ -40,6 +41,9 @@ function stopGame(){
     gamePlaying = false;
     document.getElementById("stopBtn").classList.add("hidden");
     document.getElementById("startBtn").classList.remove("hidden");
+    for(let i = 1; i <= 6; i++){
+        document.getElementById(i.toString()).classList.add("hidden");
+    }
 }
 
 // Sound Synthesis Functions
@@ -93,6 +97,7 @@ function playSingleClue(btn){
         lightButton(btn);
         playTone(btn,clueHoldTime);
         setTimeout(clearButton,clueHoldTime,btn);
+        
     }
 }
 
@@ -114,6 +119,7 @@ function lightButton(btn){
 
 function clearButton(btn){       
     document.getElementById("button"+btn).classList.remove("lit")
+
 }
 
 //user response
@@ -129,6 +135,8 @@ function winGame(){
 
 function guess(btn){
     console.log("user guessed: " + btn);
+  
+    document.getElementById(btn.toString()).classList.remove("hidden");
   
     if(!gamePlaying){return;}
   
@@ -153,5 +161,7 @@ function guess(btn){
         else{
             guessCounter++;
         }
-    }        
+    }
+
+  
 }    
