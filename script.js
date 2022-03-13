@@ -20,8 +20,10 @@ var volume = 0.5;
 
 //start and end game func
 function startGame(){
-    //initialize game variables
-    
+    //sound effect when start game
+    document.getElementById("myAudio").play();
+  
+    //initialize game variables  
     progress = 0;
     gamePlaying = true;
     mistakeCounter = 2;
