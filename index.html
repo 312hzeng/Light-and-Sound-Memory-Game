@@ -45,20 +45,11 @@
     <script src="/script.js" defer></script>
   </head>
   <body>
-    <!--
-      This is the body of the page
-      Look at the elements and see how they appear in the rendered page on the right
-      Each element is defined using tags, with < and > indicating where each one opens and closes
-      There are elements for sections of the page, images, text, and more
-      The elements include attributes referenced in the CSS for the page style
-    -->
-
-    <!-- The wrapper and content divs set margins and positioning -->
+    
     <div class="wrapper">
       <div class="content" role="main">
-        <!-- This is the start of content for our page -->
+        
         <h1 class="title">Light and Sound Memory Game</h1>
-
         
         <div class="instructions">
           
@@ -66,7 +57,16 @@
             Welcome to the game! Repeat back the pattern by pressing buttons.
           </p>
           
+          <img src="https://www.svgimages.com/svg-image/s5/number-1-256x256.png" width = "50" height = "50" id="1" class="hidden">
+          <img src="https://pngimg.com/uploads/number2/Number%202%20PNG%20images%20free%20download_PNG14925.png" width = "30" height = "30" id="2" class="hidden">
+          <img src="https://pngimg.com/uploads/number3/number3_PNG14981.png" width = "50" height = "50" id="3" class="hidden">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Quatre.svg/1200px-Quatre.svg.png" width = "30" height = "30" id="4" class="hidden">
+          <img src="https://freepngimg.com/thumb/numbers/130020-images-5-number-png-image-high-quality.png" width = "50" height = "50" id="5" class="hidden">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Six.svg/1200px-Six.svg.png" width = "30" height = "30" id="6" class="hidden">
+          
           <audio src="https://cdn.glitch.global/4bc8cdec-498e-47c2-92fc-b31a8834de4d/audio.mp3?v=1647170084783" id="myAudio"></audio>
+          
+          
           <button id="startBtn" onclick="startGame()"> 
             Start
           </button>
