@@ -39,7 +39,7 @@ The following **additional** features are implemented:
 ## Video Walkthrough (GIF)
 ![loseGame.gif](https://github.com/312hzeng/Light-and-Sound-Memory-Game/blob/master/loseGame.gif)
 ![winGame.gif](https://github.com/312hzeng/Light-and-Sound-Memory-Game/blob/master/winGame_Updated.gif)
-
+![winGame2.gif](https://github.com/312hzeng/Light-and-Sound-Memory-Game/blob/master/winGame_Updated2.gif)
 ## Reflection Questions
 **1. If you used any outside resources to help complete your submission (websites, books, people, etc) list them here.**
 
